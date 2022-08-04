@@ -1,5 +1,62 @@
-$body-color: green;
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
 
-body {
-  color: $body-color;
+$open-color: #202B49;
+$font-Comm: 'Commissioner';
+
+
+.page {
+  max-width: 1148px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.header {
+  position: relative;
+
+  &__logo {
+    width: 51px;
+    height: 59px;
+    background-image: url(./images/logo.svg);
+    position: absolute;
+    top: 11px;
+  }
+
+  &__container {
+    max-width: 993px;
+    margin: 7px auto 0 auto;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__user {
+
+  }
+
+  &__menu {
+    max-width: 850px;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    font-family: $font-Comm;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__link-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: $open-color;
+  }
+
+
+}
+
+.link {
+  text-decoration: none;
 }

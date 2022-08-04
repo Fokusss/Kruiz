@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Commissioner';
+  font-weight: 400;
+  src: url(../fonts/commissioner/Commissioner-Regular.woff2) format('woff2'),
+       url(../fonts/commissioner/Commissioner-Regular.woff) format('woff');
+
+}
