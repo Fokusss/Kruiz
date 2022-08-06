@@ -3,7 +3,8 @@
 
 $open-color: #202B49;
 $font-Comm: 'Commissioner';
-
+$font-Ark: 'Arkhip';
+$color-grey: #A4A4A4;
 
 .page {
   max-width: 1920px;
@@ -162,4 +163,90 @@ $font-Comm: 'Commissioner';
     font-size: 13px;
     line-height: 21px;
   }
+}
+
+.adventures {
+  max-width: 1148px;
+  margin: 44px auto 0 auto;
+
+  &__title {
+    font-family:  $font-Ark;
+    color: $open-color;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 0 11px 0;
+    padding: 0;
+  }
+
+  &__count {
+    margin: 9px 0 0 0;
+    font-family: $font-Comm;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: $color-grey;
+  }
+
+  &__participant {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+
+    & li {
+      display: inline-block;
+    }
+  }
+
+  &__avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+}
+
+
+.span-acent {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #5E5E5E;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 13px;
+    height: 13px;
+    margin: 0 4px 0 0;
+  }
+
+  &__number {
+    padding: 0;
+    margin: 0;
+    font-family: $font-Comm;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: $color-grey;
+  }
+}
+
+.card {
+  max-width: 1140px;
+  margin: 26px 0 0 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 0 20px 22px;
+  box-sizing: border-box;
+  display: flex;
+
+  &__image {
+    width: 305px;
+    height: 278px;
+    border-radius: 5px;
+  }
+
 }

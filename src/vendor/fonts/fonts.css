@@ -5,3 +5,10 @@
        url(../fonts/commissioner/Commissioner-Regular.woff) format('woff');
 
 }
+
+@font-face {
+  font-family: 'Arkhip';
+  font-weight: 400;
+  src: url(./arkhip/Arkhip.woff) format('woff'),
+       url(./arkhip/Arkhip.woff2) format('woff2');
+}
