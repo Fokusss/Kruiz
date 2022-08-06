@@ -11,8 +11,14 @@
   <header class="header">
     <div class="header__logo"></div>
     <div class="header__container">
-      <div class="header__user">
-
+      <div class="user">
+        <div class="user__avatar">
+          <img src="<%=require("./images/avatar_woman.png")%>" alt="Аватар" class="user__image" />
+        </div>
+        <p class="user__name">Юлия</p>
+        <div class="user__notify">
+          <div class="user__county-notify">3</div>
+        </div>
       </div>
     </div>
     <nav class="header__menu">
@@ -27,7 +33,15 @@
         <li><a href="#" class="header__link link">Запись из архива</a></li>
       </ul>
     </nav>
-
   </header>
+
+  <section class="bread-crumb">
+    <ul class="bread-crumb__list">
+      <li><a href="#" class="bread-crumb__link link">Главная</a></li>
+      <li><a href="#" class="bread-crumb__link link">Каталог приключений</a></li>
+      <li><a href="#" class="bread-crumb__link link">Карточка приключения</a></li>
+    </ul>
+  </section>
+
 </body>
 </html>

@@ -6,57 +6,160 @@ $font-Comm: 'Commissioner';
 
 
 .page {
-  max-width: 1148px;
+  max-width: 1920px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .header {
+  max-width: 1148px;
+  margin: 0 auto;
   position: relative;
 
   &__logo {
     width: 51px;
     height: 59px;
-    background-image: url(./images/logo.svg);
     position: absolute;
     top: 11px;
+    background-image: url(./images/logo.svg);
+    z-index: 0;
   }
 
   &__container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 7px 0 0 auto;
     max-width: 993px;
-    margin: 7px auto 0 auto;
+    padding-bottom: 8px;
     border-bottom: 1px solid #EAEAEA;
-  }
-
-  &__user {
-
+    position: relative;
+    z-index: 1;
   }
 
   &__menu {
-    max-width: 850px;
-    margin: 10px auto 0 auto;
+    max-width: 993px;
+    margin: 0 0 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__link-list {
+    list-style-type: none;
     padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+  }
+
+  &__link-list li {
+    margin-right: 15px;
+  }
+
+  &__link {
     font-family: $font-Comm;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-  }
-
-  &__link-list {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    justify-content: space-around;
-  }
-
-  &__link {
     color: $open-color;
   }
+}
 
 
+
+.user {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    width: 30px;
+    height: 30px;
+    background-color: $open-color;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  &__image {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__name {
+    padding: 0;
+    margin: 0;
+    font-family: $font-Comm;
+    color: $open-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__notify {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 16px 0 12px;
+    box-shadow: 0px 2px 10px rgba(123, 123, 123, 0.25);
+    position: relative;
+    z-index: 0;
+    background-image: url(./images/notify.png);
+    background-size: 12.94px 18.41px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__county-notify {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $font-Comm;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    box-shadow: 0px 2px 2px rgba(123, 123, 123, 0.25);
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .link {
   text-decoration: none;
+}
+
+.bread-crumb {
+  background-color: #F5F5F5;
+  margin: 24px 0 0 0;
+
+&__list {
+  max-width: 1148px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  & li {
+    display: inline;
+    margin-right: 8px;
+    }
+  }
+
+  & li + li::before {
+    color: #676767;
+    content: "\003E";
+    margin-right: 5.5px;
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  &__link {
+    font-family: $font-Comm;
+    color: #676767;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+  }
 }
