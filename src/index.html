@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Круиз</title>
-    <link rel="icon" href=<%=require("./images/logo_browser.png")%>/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Круиз</title>
+  <link rel="icon" href=<%=require("./images/logo_browser.png")%>/>
 </head>
+
 <body class="page">
   <header class="header">
     <div class="header__logo"></div>
@@ -35,63 +37,91 @@
     </nav>
   </header>
 
-  <section class="bread-crumb">
-    <ul class="bread-crumb__list">
-      <li><a href="#" class="bread-crumb__link link">Главная</a></li>
-      <li><a href="#" class="bread-crumb__link link">Каталог приключений</a></li>
-      <li><a href="#" class="bread-crumb__link link">Карточка приключения</a></li>
-    </ul>
-  </section>
+  <main>
 
-  <section class="adventures">
-    <h1 class="adventures__title">Море, роскошь и&nbsp;ливанские кедры.
-      На&nbsp;&laquo;Бегущей по&nbsp;волнам&raquo;
-      с&nbsp;Михаилом Кожуховым</h1>
-    <div class="date">
-      <img class="date__image" src="<%=require("./images/calendar.png")%>" alt="Календарь">
-      <p class="date__number">14.01.2022</p>
-    </div>
 
-    <p class="adventures__count">Количество участников: <span class="span-acent">20</span></p>
-    <ul class="adventures__participant">
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_1.png")%>" alt="avatar"></li>
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_2.png")%>" alt="avatar"></li>
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_3.png")%>" alt="avatar"></li>
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_1.png")%>" alt="avatar"></li>
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_2.png")%>" alt="avatar"></li>
-      <li><img class="adventures__avatar" src="<%=require("./images/avatar_3.png")%>" alt="avatar"></li>
-    </ul>
+    <section class="bread-crumb">
+      <ul class="bread-crumb__list">
+        <li><a href="#" class="bread-crumb__link link">Главная</a></li>
+        <li><a href="#" class="bread-crumb__link link">Каталог приключений</a></li>
+        <li><a href="#" class="bread-crumb__link link">Карточка приключения</a></li>
+      </ul>
+    </section>
 
-    <div class="card">
-      <img class="card__image" src="<%=require("./images/begushaia_po_volnam.png")%>" alt="Фото корабля">
-      <div class="card__container">
-        <div class="card__rout">
-          <p class="card__text">Маршрут:</p>
-          <ol class="card__rout-list">
-            <li><span class="span-list">01</span> Триполи (Ливан)</li>
-            <li><span class="span-list">02</span> Бейрут (Ливан)</li>
-            <li><span class="span-list">03</span> Сайда (Ливан)</li>
-            <li><span class="span-list">04</span> Порт Саид (Египет)</li>
-            <li><span class="span-list">05</span> Александрия (Египет)</li>
-          </ol>
-        </div>
-        <div class="card__info">
-          <p class="card__text">Дата:</p>
-          <p class="card__text">Количество мест:</p>
-          <p class="card__date">31 Октября - 09 Ноября</p>
-          <p class="card__count">Осталось 2 из 35 мест</p>
-        </div>
-        <div class="card__contact">
-          <p class="card__text">Ваш менеджер:</p>
-          <ul class="card__contact-list">
-            <li><p class="card__name">Ника Смирнова</p></li>
-            <li><p class="card__phone">+7 996 377 5357</p></li>
-            <li><p class="card__email">vs@podparusami.club</p></li>
-          </ul>
-        </div>
-        <button class="card__submit">Оставить заявку</button>
+    <section class="section adventures">
+      <h1 class="adventures__title">Море, роскошь и&nbsp;ливанские кедры.
+        На&nbsp;&laquo;Бегущей по&nbsp;волнам&raquo;
+        с&nbsp;Михаилом Кожуховым</h1>
+      <div class="date">
+        <img class="date__image" src="<%=require("./images/calendar.png")%>" alt="Календарь">
+        <p class="date__number">14.01.2022</p>
       </div>
-    </div>
-  </section>
+
+      <p class="adventures__count">Количество участников: <span class="span-acent">20</span></p>
+      <ul class="adventures__participant">
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_1.png")%>" alt="avatar"></li>
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_2.png")%>" alt="avatar"></li>
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_3.png")%>" alt="avatar"></li>
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_1.png")%>" alt="avatar"></li>
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_2.png")%>" alt="avatar"></li>
+        <li><img class="adventures__avatar" src="<%=require("./images/avatar_3.png")%>" alt="avatar"></li>
+      </ul>
+
+      <div class="card">
+        <img class="card__image" src="<%=require("./images/begushaia_po_volnam.png")%>" alt="Фото корабля">
+        <div class="card__container">
+          <div class="card__rout">
+            <p class="card__text">Маршрут:</p>
+            <ol class="card__rout-list">
+              <li><span class="span-list">01</span> Триполи (Ливан)</li>
+              <li><span class="span-list">02</span> Бейрут (Ливан)</li>
+              <li><span class="span-list">03</span> Сайда (Ливан)</li>
+              <li><span class="span-list">04</span> Порт Саид (Египет)</li>
+              <li><span class="span-list">05</span> Александрия (Египет)</li>
+            </ol>
+          </div>
+          <div class="card__info">
+            <p class="card__text">Дата:</p>
+            <p class="card__text">Количество мест:</p>
+            <p class="card__date">31 Октября - 09 Ноября</p>
+            <p class="card__count">Осталось 2 из 35 мест</p>
+          </div>
+          <div class="card__contact">
+            <p class="card__text">Ваш менеджер:</p>
+            <ul class="card__contact-list">
+              <li>
+                <p class="card__name">Ника Смирнова</p>
+              </li>
+              <li>
+                <p class="card__phone">+7 996 377 5357</p>
+              </li>
+              <li>
+                <p class="card__email">vs@podparusami.club</p>
+              </li>
+            </ul>
+          </div>
+          <button class="card__submit">Оставить заявку</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section description">
+      <h2 class="description__title">Под парусами &laquo;Бегущей по&nbsp;волнам&raquo; в&nbsp;компании Михаила Кожухова пройдем через три страны&nbsp;&mdash; Кипр, Ливан и&nbsp;Египет</h2>
+      <p class="description__subtitle">Бейрут, Сайда, Александрия&nbsp;&mdash; древнейшие города мира лежат у&nbsp;нас на&nbsp;пути. Солнце, море, ветер, романтика</p>
+      <p class="description__text">&laquo;Бегущая по&nbsp;волнам&raquo;&nbsp;&mdash; один из&nbsp;самых красивых кораблей во&nbsp;всем мире. Он&nbsp;входит в&nbsp;двадцатку крупнейших парусников. Прибавьте к&nbsp;этому сочетание элегантности и&nbsp;маневренности судна и&nbsp;высочайших стандартов комфорта и&nbsp;безопасности&nbsp;&mdash; и&nbsp;получится идеальный корабль для настоящего морского приключения!</p>
+      <blockquote class="description__blockquote">
+        <p class="description__text">Знаете&nbsp;ли вы, друзья, что в&nbsp;1773 году мой тезка капитан Михаил Кожухов во&nbsp;главе отряда русских моряков и&nbsp;балканских пиратов поднял флаг России над нынешней столицей Ливана? Есть предложение повторить без осады, пороха и&nbsp;прочих военных грозностей, но&nbsp;с&nbsp;ложкой, вилкой и&nbsp;бокалом наперевес: ливанская кухня&nbsp;&mdash; самая вкусная в&nbsp;регионе. А&nbsp;заодно:</p>
+        <ul class="description__cheklist">
+          <li>посидеть вечером в бейрутской кофейне; </li>
+          <li>увидеть величественный библейский Баальбек и легендарный Суэцкий канал;</li>
+          <li>погулять по роще ливанских кедров, из которых строили пирамиды еще фараоны Египта </li>
+          <li>древней Александрии закончить наш беспримерный поход. </li>
+        </ul>
+        <p class="description__text">Причем: мы тоже сделаем все это на борту роскошного трехмачтового парусника «Бегущая по волнам», находиться на котором — само по себе счастье, умноженное на красоту. Не верю, что у вас есть предложение соблазнительнее на ноябрьские праздники 2021 года! </p>
+        <p class="description__author">&mdash;&nbsp;Михаил Кожухов, журналист, телеведущий, президент &laquo;Клуба путешествий&raquo;</p>
+      </blockquote>
+    </section>
+  </main>
 </body>
+
 </html>

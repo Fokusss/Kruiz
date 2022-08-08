@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'Commissioner';
+  font-weight: 500;
+  src: url(./commissioner/Commissioner-SemiBold.woff) format('woff'),
+       url(./commissioner/Commissioner-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Arkhip';
   font-weight: 400;
   src: url(./arkhip/Arkhip.woff) format('woff'),
